@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>SEOKHOON</title>
+	<link rel="shortcut icon" href="img/gravity_icon.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/foundation-icons.css">
+</head>
+
+<body>
+
+	<div class="container no_padding">
+		<header>		
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="logo">
+					<a href="index.html"><h1>gravity</h1></a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li class="active"><a href="resume.html">Resume</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-header">
+					<h1>Resume <small>Here are some of my skills and qualifications.</small></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-danger">
+					<div class="panel-heading skills">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+						    <h2>C / C++</h2>
+						</a>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse">
+						<div class="panel-body qualification">
+							<span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star-empty"></span>:
+						    <br>
+					    	I have worked on various C/C++ problems. Some of the topics that I have learned include Classes, Stack, Queue, Linked List, Recursion and Hash Table. Alternatively, you can check out my coding exercises <a href="https://drive.google.com/folderview?id=0B-Zb-FWadYpvVFVDOEpaRGgzZzg&usp=sharing">here</a>.
+					    </div>
+					</div>
+				</div>				
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-danger">
+					<div class="panel-heading skills">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+						    <h2>Hardware Skills</h2>
+						</a>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body qualification">
+							<span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star-empty"></span>
+						    <span class="glyphicon glyphicon-star-empty"></span>:
+						    <br>
+					    	As an Electrical and Computer Engineering major, university education has equipped me with both hardware and software knowledge. For hardware knowledge, I have learnt embedded systems, computer architecture, circuitry, signal and semiconductors. You can find my projects <a href="https://drive.google.com/folderview?id=0B-Zb-FWadYpvQ05fanp2U1ZuNmM&usp=sharing">here</a>.
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-danger">
+					<div class="panel-heading skills">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+							<h2>HTML CSS</h2>
+						</a>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+						<div class="panel-body qualification">
+							<span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star-empty"></span>
+						    <span class="glyphicon glyphicon-star-empty"></span>
+						    <span class="glyphicon glyphicon-star-empty"></span>:
+						    <br>
+					    	I am working at a technical startup in Singapore and I am involved in developing websites. There are a lot more to learn though!
+					    </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-danger">
+					<div class="panel-heading skills">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+				          	<h2>
+				          		Language
+				          	</h2>
+				        </a>
+					</div>
+					<div id="collapseFour" class="panel-collapse collapse">
+						<div class="panel-body qualification">
+							<span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star"></span>
+						    <span class="glyphicon glyphicon-star-empty"></span>
+						    <span class="glyphicon glyphicon-star-empty"></span>:
+						    <br>
+					    	English (high proficiency), Korean (high proficiency), Chinese (basic)
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<footer>
+	<p>
+		<br>
+		© 2014 gravity.inc. <br>
+		Website coded and designed by Seokhoon Lee, May 2014. CS3240.
+	</p>
+</footer>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+
+	$(document).ready(function() {
+
+		$('body').css('display', 'none');
+
+		$('body').fadeIn(1000);
+
+		$('.link').click(function(event) {
+
+			event.preventDefault();
+
+			newLocation = this.href;
+
+			$('body').fadeOut(1000, newpage);
+
+		});
+
+		function newpage() {
+
+		window.location = newLocation;
+
+		}
+
+	});
+
+</script>
+</html>

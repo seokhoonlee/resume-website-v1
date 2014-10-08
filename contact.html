@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>SEOKHOON</title>
+	<link rel="shortcut icon" href="img/gravity_icon.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/foundation-icons.css">
+</head>
+
+<body>
+
+	<div class="container no_padding">
+		<header>		
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="logo">
+					<a href="index.html"><h1>gravity</h1></a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li class="active"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<form>
+				  	<fieldset>
+					    <div class="page-header">
+							<h1>Contact <small>I mean why not?</small></h1>
+						</div>
+
+					    <label class="label_margin">Name</label><br>
+					    <input class="label_margin width_200" type="text" placeholder="Name" id="inputName">
+					    <br>
+					    
+					    <label class="label_margin">Email address</label><br>
+					    <input class="label_margin width_200" type="text" placeholder="Email" id="inputEmail">
+					    <br>
+						
+						<label class="label_margin">How can I help you?</label><br>
+					    <textarea class="label_margin width_200" rows="4"></textarea><br>
+					    
+					    <button type="submit" class="btn btn-primary label_margin" id="submitBtn">
+					    	Submit
+					    </button>
+
+					    <a href="#" class="btn btn-info" data-toggle="modal" data-target="#basicModal">Help?</a>
+
+						<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+						  	<div class="modal-dialog">
+						    	<div class="modal-content">
+						      		<div class="modal-header">
+						        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						        			<h4 class="modal-title" id="myModalLabel">This is a beta-website.</h4>
+						      		</div>
+						     		<div class="modal-body">
+						        		This website only contains front-end components. Please contact me through my email: seokhoon.lee.9393@gmail.com.
+						      		</div>
+						      		<div class="modal-footer">
+								        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+						      		</div>
+						    	</div>
+						  	</div>
+						</div>
+				  	</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+<footer>
+	<p>
+		<br>
+		© 2014 gravity.inc. <br>
+		Website coded and designed by Seokhoon Lee, May 2014. CS3240.
+	</p>
+</footer>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$("#submitBtn").click(function(event) {
+
+			if($("#inputName").val().length==0) {
+
+				event.preventDefault();
+
+				alert("Please fill in your name");
+			}
+			else if($("#inputEmail").val().length==0) {
+
+				event.preventDefault();
+
+				alert("Please fill in your email address");
+			}
+			else{
+				alert("Submit button clicked!");
+			}
+		});
+	});
+
+	$(document).ready(function() {
+
+		$('body').css('display', 'none');
+
+		$('body').fadeIn(1000);
+
+		$('.link').click(function(event) {
+
+			event.preventDefault();
+
+			newLocation = this.href;
+
+			$('body').fadeOut(1000, newpage);
+
+		});
+
+		function newpage() {
+
+		window.location = newLocation;
+
+		}
+
+	});
+	
+</script>
+</html>

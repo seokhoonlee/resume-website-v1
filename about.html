@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>SEOKHOON</title>
+	<link rel="shortcut icon" href="img/gravity_icon.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/foundation-icons.css">
+</head>
+
+<body>
+
+	<div class="container no_padding">
+		<header>		
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="logo">
+					<a href="index.html"><h1>gravity</h1></a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="about.html">About Me</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-header">
+					<h1>About me <small>Get to know more about me! </small></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+    <div class="timelineBar"></div>
+    <div class="row">
+        <div class="col-sm-12">
+        	<div class="timelineDot"></div>
+        </div>
+        <div class="col-sm-6 invisible">
+        </div>
+        <div class="col-sm-6">
+        	<div class="panel panel-success">
+    			<div class="panel-heading">1993 Sep 03: Born to be wild</div>
+				<div class="panel-body">
+					<!-- <img src="img/iconmonstr-css-code-icon.svg"> -->
+					<!-- <i class="fi-torso"></i> -->
+					I was born in Berlin, Germany where my parents were studying their masters. But I was only there for 3 months, so I can't speak German at all. Still, I had some sort of "global exposure" from the very beginning. By the way, I am the one on the right!
+					<br>
+					<br>
+					<img src="img/me_1.png" class="img-rounded">
+					<br>
+				</div>
+        	</div>
+        </div>
+    </div>
+
+    <div class="row">
+    	<div class="col-sm-12">
+        	<div class="timelineDot"></div>
+        </div>
+        <div class="col-sm-6">
+        	<div class="panel panel-success">
+    			<div class="panel-heading">2007 Mar 15: Singapore, Away and Alone</div>
+				<div class="panel-body">
+					At the age of 14, my parents "sent" me to study in Singapore alone. That was pretty harsh at that moment but, on hindsight, I think it helped me much in terms of being independent and disciplined. Currently, I am bilingual (English and Korean). So, I guess Singapore education worked out just fine for me. The photo was taken while I was preparing to come to Singapore and basically I won some award for math (one of the many to come)!
+					<br>
+					<br>
+					<img src="img/me_2.png" class="img-rounded">
+					<br>
+				</div>
+        	</div>
+	        <div class="col-sm-6 invisible">
+	        </div>
+	    </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+        	<div class="timelineDot"></div>
+        </div>
+        <div class="col-sm-6 invisible">
+        </div>
+        <div class="col-sm-6">
+        	<div class="panel panel-success">
+    			<div class="panel-heading">2012 Aug 01: NUS Electrical Engineering</div>
+				<div class="panel-body">
+					Since young, I have always been more of a science person so I decided to pursue the degree of Engineering. I was kinda into handphones and programming at the same time. Therefore, I chose Electrical Engineering. Do I ever regret? Nope! I am having much fun studying Electrical Engineering.
+					<br>
+					<br>
+					<img src="img/me_3.png" class="img-rounded">
+					<br>
+				</div>
+        	</div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-sm-12">
+        	<div class="timelineDot"></div>
+        </div>
+        <div class="col-sm-6">
+        	<div class="panel panel-success">
+    			<div class="panel-heading">2014 May 15: Silicon Valley, Here I go!</div>
+				<div class="panel-body">
+					NUS Overseas College is a one-year program that allows students to study and intern at start-up company at the same time. The company that I have been accepted to is a Saas company whose main product is API. I hope it will be a fruitful experience and I definitely can't wait for it!
+					<br>
+					<br>
+					<img src="img/me_4.png" class="img-rounded">
+					<br>					
+				</div>
+        	</div>
+        </div>
+        <div class="col-sm-6">
+        </div>
+        <div class="col-sm-12">
+        	<h2 class="timeline_end">So...what's next?</h2>
+        </div>
+    </div>
+</div>
+</body>
+
+<footer>
+
+	<p>
+		<br>
+		© 2014 gravity.inc. <br>
+		Website coded and designed by Seokhoon Lee, May 2014. CS3240.
+	</p>
+
+</footer>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+
+	$(document).ready(function() {
+
+		$('body').css('display', 'none');
+
+		$('body').fadeIn(1000);
+
+		$('.link').click(function(event) {
+
+			event.preventDefault();
+
+			newLocation = this.href;
+
+			$('body').fadeOut(1000, newpage);
+
+		});
+
+		function newpage() {
+
+		window.location = newLocation;
+
+		}
+
+	});
+
+</script>
+</html>

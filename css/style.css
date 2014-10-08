@@ -1,0 +1,194 @@
+body {
+	background-color: #e3e3e3;
+}
+
+.container {
+	background-color: white;
+
+}
+
+.no_padding {
+	padding: 0;
+}
+
+header h1 {
+	background: url(../img/gravity_logo.png) no-repeat;
+	text-indent: -9999px;
+}
+
+.logo h1 {
+	width: 125px;
+	height: 50px;
+	float: left;
+	margin: 0 0;
+}
+
+.nav {
+	float: right;
+}
+
+.navbar {
+	margin: 0 0 20px 0;
+}
+
+.carousel-inner a {
+	color: white;
+	font-size: 50px;
+	text-decoration: none;
+	text-shadow: 2px 2px 0px black;
+	text-shadow: -2px -2px 0px black;
+	text-align: right;
+}
+
+.width_100 {
+	width: 100px;
+}
+
+.width_200 {
+	width: 200px;
+}
+
+.border_column {
+	border-right: 1px #e3e3e3 solid;
+}
+
+.border_column_last {
+	border-right: 0px #e3e3e3 solid;
+}
+
+footer {
+	margin-top: 30px;
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	font-family: "Proxima Nova Regular","Helvetica Neue",Calibri,"Droid Sans",Helvetica,Arial,sans-serif;
+	height: 150px;
+	text-align: center;
+}
+
+.form {
+	float: left;
+}
+
+.button_margin {
+	margin: 10px 0px;
+}
+
+.label_margin {
+	margin: 10px 15px;
+}
+
+@import url('https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css');
+.timelineBar {
+    width: 2px;
+    background-color: #419641;
+    display: inline-block;
+    position: absolute;
+    height: 1880px;
+    left: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.timelineDot {
+    width: 15px;
+    height: 15px;
+    background-color: #419641;
+    opacity: 1;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    margin-left: -1px;
+    border-radius: 10px;
+}
+
+.panel {
+	margin-left: 50px;
+	width: 450px;
+}
+
+.panel-body img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* border-radius: 8px; */
+}
+
+.timeline_end {
+	color: #419641;
+	text-align: center; 
+	margin-bottom: 50px;
+}
+
+.skills {
+	font-size: 15px;
+	text-align: center;
+}
+
+.skills a {
+	font-size: 15px;
+	color: #d44950;
+}
+
+.skills h2 {
+	margin-top: 10px;
+}
+
+.skills a:hover {
+	color: #d44950;
+	text-decoration: none;
+}
+
+.qualification {
+	text-align: left;
+}
+
+.qualification a {
+	color: #FE2E2E;
+}
+
+.qualification a:hover {
+	color: #B40404;
+}
+
+.panel-danger {
+	width: 555px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.modal-content {
+	width: 300px;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 200px 0px;
+}
+
+.page-header {
+	margin-top: 0;
+}
+
+.page-header h1{
+	margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+	.timelineBar {
+		display: none;
+	}
+
+	.timelineDot {
+		display: none;
+	}
+
+	.invisible {
+		display: none;
+	}
+
+	.timeline_end {
+		text-align: left;
+		width: 200px;
+		margin-left: 100px;
+	}
+}

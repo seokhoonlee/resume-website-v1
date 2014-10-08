@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>SEOKHOON</title>
+	<link rel="shortcut icon" href="img/gravity_icon.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/foundation-icons.css">
+</head>
+
+<body>
+
+	<div class="container no_padding">
+		<header>		
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="logo">
+					<a href="index.html"><h1>gravity</h1></a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+	<div class="container">
+		<div class="row no_padding">
+			<div class="col-md-12 no_padding">
+				<div class="main">
+					<div>
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner">
+						    <div class="item active">
+						      <img src="img/hulk.jpg" >
+						      <div class="carousel-caption">
+						        <a href="about.html">About Me</a>
+						        <p>
+						        	Want to find out more about me?
+						        </p>
+						      </div>
+						    </div>
+
+						    <div class="item">
+						      <img src="img/ironman.jpg" >
+						      <div class="carousel-caption">
+						        <a href="resume.html">Resume</a>
+						        <p>
+						        	What skills / qualifications do I have?
+						        </p>
+						      </div>
+						    </div>
+
+						    <div class="item">
+						      <img src="img/world.jpg" >
+						      <div class="carousel-caption">
+						        <a href="contact.html">Contact</a>
+						        <p>
+						        	because the world is just too small!
+						        </p>
+						      </div>
+						    </div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left"></span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right"></span>
+						  </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4 border_column">
+				<h1><span class="glyphicon glyphicon-user"></span> About me</h1>		        	     
+				<img src="" alt="">
+				<p>
+					My name is Seokhoon and as my name suggests I am Korean. 
+					I have been studying in Singapore for 8 years and currently I am studying Electrical Engineering at National University of Singapore.
+
+					As a Korean student who came to Singapore alone to study at the age of 14, I have a lot more to tell you about me!
+				</p>
+
+				<a href="about.html" class= "button_margin btn btn-success btn-large"> Read More</a>
+				
+			</div>
+			<div class="col-md-4 border_column">
+				<h1><span class="glyphicon glyphicon-paperclip"></span> Resume</h1>
+				<img src="" alt="">
+				<p>
+					I am studying Electrical Engineering and I am on specialization track for programming and embedded systems. You can find some of my skills related to the above fields and at the same time take a look at some of my works!
+				</p>
+				
+				<a href="resume.html" class= "button_margin btn btn-danger btn-large"> Read More</a>
+
+			</div>
+			<div class="col-md-4 border_column_last">
+				<h1><span class="glyphicon glyphicon-send"></span> Contact</h1>
+				<img src="" alt="">
+				<p>
+					Interested to know me better? Well, tell me more about you first :)
+				</p>
+
+				<a href="contact.html" class= "button_margin btn btn-primary btn-large"> Read More</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+<footer>
+
+	<p>
+		<br>
+		© 2014 gravity.inc. <br>
+		Website coded and designed by Seokhoon Lee, May 2014. CS3240.
+	</p>
+
+</footer>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+
+	$(document).ready(function() {
+
+		$('body').css('display', 'none');
+
+		$('body').fadeIn(1000);
+
+		$('.link').click(function(event) {
+
+			event.preventDefault();
+
+			newLocation = this.href;
+
+			$('body').fadeOut(1000, newpage);
+
+		});
+
+		function newpage() {
+
+		window.location = newLocation;
+
+		}
+
+	});
+
+</script>
+</html>
